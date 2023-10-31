@@ -18,9 +18,19 @@ li {
     font-family: monospace;
   }
 
-  /*light-theme*/
+  :root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+
+  /*themes*/
   
   .light-theme {
-    color: #000000;
-    background: #00FF00;
+    --bg: var(--green);
+    --fontColor: var(--black);
+  }
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
   }
